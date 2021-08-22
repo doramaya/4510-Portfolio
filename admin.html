@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CAFETERIA: ADMIN</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+		</style>
+        <link defer href="styles.css" rel="stylesheet">
+		<script defer src="admin.js"></script>
+      </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="index.html">HOME</a></li>
+                    <li role="presentation"><a href="about.html">ABOUT</a></li>
+                    <li role="presentation"><a href="menu.html">MENU</a></li>
+                    <li role="presentation" class="active"><a href="admin.html">ADMIN</a></li>
+                </ul>
+            </div>
+        </nav>    
+        <div>
+            <h1>Welcome! Please Log In:</h1>   
+            <div class="loginform">    
+            <form id="login">    
+                <label for="username"><h5>Username:</h5></label>
+                <input type="text" name="username" id="username" placeholder="Username...">      
+                <label for="password"><h5>Password:</h5></label>
+                <input type="password" name="password" id="password" placeholder="Password...">    
+                <label></label>
+                <button class="loginButton" type="submit"><p>Log In </p></button>    
+            </form>
+            <form id="adminForm" class="hidden">
+                <input type="text" name="foodItem" id="foodItem" placeholder="Food Item...">
+                <input type="text" name="foodDescription" id="foodDescription" placeholder="Food Description...">
+                <input type="text" name="foodPrice" id="foodPrice" placeholder="Price (Include $)...">
+                <button class="submitItem" type="submit">Submit Food Item</button>
+                <p class="successMessage"></p>
+                <button class="logoutButton" type="submit">Log Out</button>
+            </form>     
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </body>
+    <footer>University of Denver ICT 4510 Portfolio Assignment</footer>
+</html>

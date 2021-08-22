@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAFETERIA: MENU</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+		</style>
+    	<script defer src="menu.js"></script>
+      </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="index.html">HOME</a></li>
+                    <li role="presentation"><a href="about.html">ABOUT</a></li>
+                    <li role="presentation" class="active"><a href="menu.html">MENU</a></li>
+                    <li role="presentation"><a href="admin.html">ADMIN</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="fullMenu">
+            <div class="permanentMenu">
+                <h1>Menu:</h1>
+                <div class="menuItem">
+                <h2>Latte</h2>
+                <p class="pleft">Your choice of whole, 2%, almond or oat milk.<strong>$5</strong></p>
+                </div>
+                <div class="menuItem">
+                    <h2>Tea</h2>
+                    <p class= "pleft">Green Tea, Early Grey, Chamomile or Rose. <strong>$3</strong></p>
+                </div>
+                <div class="menuItem">
+                    <h2>Pastry</h2>
+                    <p class= "pleft">Croissant, Cookie, Brownie, Cake Slice. <strong>$6</strong></p>
+                </div>
+                <div class="menuItem">
+                    <h2>Juice</h2>
+                    <p class= "pleft">Orange, Pomegranite or Celery. <strong>$7</strong></p>
+                </div>
+                <div class="menuItem">
+                    <h2>Bagel</h2>
+                    <p class="pleft">Everything, Sesame or Plain. <strong>$3</strong></p>
+                </div>
+            </div>
+            <h1>This Week's Special:</h1>
+            <!-- where my fecth request will send new menu items, featured as "specials" -->
+            <div class="newItems">
+            </div>
+        </div>
+    </body>
+    <footer> University of Denver ICT 4510 Portfolio Assignment</footer>
+</html>
